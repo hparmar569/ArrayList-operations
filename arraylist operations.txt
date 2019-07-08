@@ -1,0 +1,36 @@
+import java.util.*;
+public class Example
+{ 
+    public static void main(String[]args)
+    {
+      System.out.println("Enter size of arraylist");
+      Scanner c=new Scanner(System.in);
+      int n=c.nextInt();
+      ArrayList<Integer> list=new ArrayList<Integer>(n);
+    
+       for(int i=1;i<=n;i++)
+       {
+         list.add(i);  //appending each element at end of list
+              
+       }
+       System.out.println(list);  //printing whole list
+       list.remove(2);   //remove element at 2nd index in a list
+       System.out.println(list);
+       System.out.println("size of list is:"+list.size());
+       System.out.println(list.contains(3));
+       list.set(1,3);  //first parameter is index no. and second is value by which element is to be replaced
+       list.set(0,2);
+       System.out.println(list);
+       list.add(2);
+       System.out.println(list);
+       System.out.println(list.indexOf(2));  //returns first occurence of element
+       System.out.println(list.lastIndexOf(2));  //returns last index of element
+       
+       for(int i=0;i<list.size();i++)
+       {
+           System.out.print(list.get(i)+" ");    // Printing elements one by one
+       }
+    }
+    
+} 
+       
